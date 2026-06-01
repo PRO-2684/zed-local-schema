@@ -1,6 +1,6 @@
 # zed-local-schema
 
-This repo showcases a bug in Zed, where local JSON schemas specified in `settings.json` won't work.
+This repo showcases a bug in Zed, where local JSON schemas specified in `settings.json` won't work on Windows.
 
 ## Reproduction Steps
 
@@ -22,18 +22,16 @@ And if `schemas.url` is set to `schema.json` (instead of `./schema.json`):
 Unable to load schema from '\schema.json': ENOENT: no such file or directory, open 'D:\schema.json'. (768)
 ```
 
-On Linux, there's no warning, but the schema feature is not activated (like auto-completion).
-
-When schema is specified with `$schema` key, however, it works in both platforms.
+On Linux, it works properly. When schema is specified with `$schema` key, however, it works in both platforms.
 
 ## Summary Table
 
-| Platform | Method          | Example                   | Result         |
-| -------- | --------------- | ------------------------- | -------------- |
-| Windows  | `settings.json` | `data-with-settings.json` | 🔴 Warning     |
-| Linux    | `settings.json` | `data-with-settings.json` | 🔴 Silent Fail |
-| Windows  | `$schema`       | `data-with-key.json`      | 🟢 Success     |
-| Linux    | `$schema`       | `data-with-key.json`      | 🟢 Success     |
+| Platform | Method          | Example                   | Result     |
+| -------- | --------------- | ------------------------- | ---------- |
+| Windows  | `settings.json` | `data-with-settings.json` | 🔴 Warning |
+| Linux    | `settings.json` | `data-with-settings.json` | 🟢 Success |
+| Windows  | `$schema`       | `data-with-key.json`      | 🟢 Success |
+| Linux    | `$schema`       | `data-with-key.json`      | 🟢 Success |
 
 ## Data Source
 
