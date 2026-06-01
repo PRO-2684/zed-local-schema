@@ -9,7 +9,7 @@
                 "json": {
                     "schemas": [
                         {
-                            "fileMatch": ["data.json"],
+                            "fileMatch": ["data-with-settings.json"],
                             "url": "./schema.json",
                         },
                     ],
