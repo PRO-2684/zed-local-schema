@@ -5,8 +5,13 @@ This repo showcases a bug in Zed, where local JSON schemas specified in `setting
 ## Reproduction Steps
 
 1. Clone this repo.
-2. Open this repo in Zed on Windows. (version 1.4.4, commit 1d0b482638588e5507184d91631e30596339ee1b)
+2. Open this repo in Zed on Windows.
 3. Open `data-with-settings.json` and observe the warning.
+
+Tested on:
+
+- Version 1.4.4, commit 1d0b482638588e5507184d91631e30596339ee1b
+- Version 1.5.3, commit 5d370d67c6ed5a81563695d364385568f6c94be1
 
 ## Problem
 
