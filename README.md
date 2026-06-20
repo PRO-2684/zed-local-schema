@@ -27,6 +27,8 @@ And if `schemas.url` is set to `schema.json` (instead of `./schema.json`):
 Unable to load schema from '\schema.json': ENOENT: no such file or directory, open 'D:\schema.json'. (768)
 ```
 
+Temporary work around: use absolute path with `file:///` URI, like `file:///C:/path/to/zed-local-schema/schema.json`.
+
 On Linux, it works properly. When schema is specified with `$schema` key, however, it works in both platforms.
 
 ## Summary Table
