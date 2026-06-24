@@ -1,6 +1,9 @@
 # zed-local-schema
 
-This repo showcases a bug in Zed, where local JSON schemas specified in `settings.json` won't work on Windows. See zed-industries/zed#58503.
+This repo showcases a bug in Zed, where local JSON schemas specified in `settings.json` won't work on Windows.
+
+- Issue: zed-industries/zed#58503.
+- PR: zed-industries/zed#59635
 
 ## Reproduction Steps
 
